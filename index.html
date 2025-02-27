@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800">
+     <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200"> 
+      <header class="mb-0 pb-0">
+        <nav class="flex justify-center mt-6">
+          <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
+            <svg class="w-48 absolute" width="316" height="312" viewBox="0 0 316 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.5" y="2.5" width="311" height="307" rx="153.5" fill="url(#paint0_linear_11_2708)" stroke="url(#paint1_linear_11_2708)" stroke-width="5"/>
+              <defs>
+              <linearGradient id="paint0_linear_11_2708" x1="158" y1="0" x2="158" y2="142.35" gradientUnits="userSpaceOnUse">
+              <stop stop-color="white"/>
+              <stop offset="1" stop-color="white" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_11_2708" x1="158" y1="0" x2="158" y2="134" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0874F2"/>
+              <stop offset="1" stop-color="white" stop-opacity="0"/>
+              </linearGradient>
+              </defs>
+              </svg>
+              <svg class="w-16" width="76" height="72" viewBox="0 0 76 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.7468 26.1773L23.9301 25.8965V44.9681L20.4841 48.2788L17.0382 46.4886V33.4002C17.0375 29.9605 19.4005 26.971 22.7468 26.1773ZM4.55674 38.3131L0 37.6364L4.50657 39.9779L11.3985 43.5583V31.6219L10.2152 31.9027C7.13651 32.6337 4.89542 35.2246 4.55674 38.3131ZM39.7174 29.7989L36.4603 31.2811V20.1704L35.277 20.4512C31.9307 21.2457 29.5683 24.2345 29.5683 27.6735V39.5493L36.4603 32.9278L39.7174 29.7989Z" fill="#0874F2"/>
+                <path d="M22.7468 26.1773L23.9301 25.8965V44.9681L20.4841 48.2788L17.0382 46.4886V33.4002C17.0375 29.9605 19.4005 26.971 22.7468 26.1773ZM4.55674 38.3131L0 37.6364L4.50657 39.9779L11.3985 43.5583V31.6219L10.2152 31.9027C7.13651 32.6337 4.89542 35.2246 4.55674 38.3131ZM39.7174 29.7989L36.4603 31.2811V20.1704L35.277 20.4512C31.9307 21.2457 29.5683 24.2345 29.5683 27.6735V39.5493L36.4603 32.9278L39.7174 29.7989Z" fill="url(#paint0_linear_11_2709)"/>
+                <path d="M0 42.5445L20.4834 72L75.8411 0L20.4834 53.1862L0 42.5445Z" fill="#0874F2"/>
+                <path d="M0 42.5445L20.4834 72L75.8411 0L20.4834 53.1862L0 42.5445Z" fill="url(#paint1_linear_11_2709)"/>
+                <defs>
+                <linearGradient id="paint0_linear_11_2709" x1="21.3286" y1="56.5796" x2="19.73" y2="31.7132" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0874F2"/>
+                <stop offset="1" stop-color="#0874F2" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_11_2709" x1="42.4484" y1="91.7048" x2="38.4085" y2="28.8603" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0874F2"/>
+                <stop offset="1" stop-color="#0874F2" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>
+                
+          </div>
+        </nav>
+      </header>
+        
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-white w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body w-96 h-80">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-black font-bold">Mobile Number</span>
+                    </label>
+                    <input value="01759178355" id="mobile-numbr" type="number" placeholder="Enter your number" class="input input-bordered bg-[#F4F5F7] rounded-3xl h-12 w-80" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-black font-bold">4 Digit Pin</span>
+                    </label>
+                    <input id="pin-numbr" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered bg-[#F4F5F7] rounded-3xl h-12 w-80" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-login" class="btn btn-primary rounded-3xl text-white bg-[#0874F2]">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+     </section>
+<script src="js/login.js"></script>
+</body>
+</html>
