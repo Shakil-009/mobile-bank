@@ -11,6 +11,7 @@ document.getElementById('add-money').addEventListener('click', function (event){
         if(convertedPin===1234){
             const sum = convertedMainBalance + convertedAmount;
             console.log(sum)
+            document.getElementById('main-balance').innerText = sum;
         }
         else{
             alert('Wrong Pin')
